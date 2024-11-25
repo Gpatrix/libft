@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:39:28 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/21 09:57:15 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/11/25 09:02:42 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static char	*ft_strndup(const char *start, size_t len)
 	char	*word;
 	size_t	i;
 
-	word = (char *)malloc((len + 1) * sizeof(char));
+	word = malloc((len + 1) * sizeof(char));
 	if (!word)
 		return (NULL);
 	i = 0;
@@ -64,6 +64,18 @@ static size_t	ft_strlen_end(const char *s, char c)
 	return (count);
 }
 
+void	free_tab(char **tab)
+{
+	while (*tab)
+	{
+		free(*tab);
+		*tab = NULL;
+		(*tab)++;
+	}
+	free(tab);
+	tab = NULL;
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**tab;
@@ -72,7 +84,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (0);
-	tab = (char **)malloc((ft_count_words(s, c) + 1) * sizeof(char *));
+	tab = malloc((ft_count_words(s, c) + 1) * sizeof(char *));
 	if (!tab)
 		return (NULL);
 	index = 0;
@@ -85,7 +97,7 @@ char	**ft_split(char const *s, char c)
 			tab_size = ft_strlen_end(s, c);
 			tab[index++] = ft_strndup(s, tab_size);
 			if (!tab[index - 1])
-				return (NULL);
+				return (free_tab(tab), NULL);
 			s += tab_size;
 		}
 	}
@@ -95,17 +107,19 @@ char	**ft_split(char const *s, char c)
 
 // int	main()
 // {
-// 	char str[] = "les mot  de plus tester";
-// 	char charset = ' ';
+// 	// char str[] = "les mot  de plus tester";
+// 	// char charset = ' ';
 // 	char **result;
 // 	int i;
 
-// 	result = ft_split(str, charset);
+// 	result = ft_split("^^^1^^2a,^^^^3^^^^--h^^^^", '^');
 
+// 	if (!result)
+// 		return (EXIT_FAILURE);
 // 	i = 0;
 // 	while (result[i])
 // 	{
-// 		printf("Word %d: %s\n", i, result[i]);
+// 		printf("Word %d: %s\n", i + 1, result[i]);
 // 		free(result[i]);
 // 		i++;
 // 	}
