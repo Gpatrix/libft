@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 17:18:26 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/15 08:54:41 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:13:22 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 int	ft_isalnum(int c)
 {
 	if (ft_isdigit(c) || ft_isalpha(c))
-	{
 		return (8);
-	}
 	return (0);
 }
 

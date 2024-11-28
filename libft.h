@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:51:17 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/11/28 15:21:06 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:14:52 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,9 @@ t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int			ft_isalnum(int c);
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
+int			ft_isstrdigit(char *str);
 int			ft_isascii(int c);
+int			ft_isstrascii(char *str);
 int			ft_isprint(int c);
 
 int			ft_toupper(int c);

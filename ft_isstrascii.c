@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_isstrascii.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/15 09:01:29 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/11/28 16:07:45 by lchauvet         ###   ########.fr       */
+/*   Created: 2024/11/28 16:07:17 by lchauvet          #+#    #+#             */
+/*   Updated: 2024/11/28 16:12:32 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+int	ft_isstrascii(char *str)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
+	while (*str)
+	{
+		if (*str <= 0 || *str >= 127)
+			return (1);
+		str++;
+	}
 	return (0);
 }

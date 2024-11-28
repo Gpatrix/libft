@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_isstrdigit.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/15 09:01:29 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/11/28 16:07:45 by lchauvet         ###   ########.fr       */
+/*   Created: 2024/10/14 17:09:30 by lchauvet          #+#    #+#             */
+/*   Updated: 2024/11/28 16:14:18 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+int	ft_isstrdigit(char *str)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
+	while (*str)
+	{
+		if (*str <= '0' || *str >= '9')
+			return (1);
+		str++;
+	}
 	return (0);
 }
+
+// int	main(void)
+// {
+// 	printf("fake: %i | True: %i", ft_isdigit(48), isdigit(48));
+// 	return (0);
+// }
