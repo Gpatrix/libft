@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 09:43:21 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/11/29 09:55:46 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/11/29 10:20:29 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static double	get_double(char *str)
 
 	val = 0;
 	afterdot = 0;
-	scale = 0;
+	scale = 1;
 	while (*str)
 	{
 		if (afterdot)
