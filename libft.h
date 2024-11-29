@@ -6,14 +6,13 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:51:17 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/11/28 16:14:52 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/11/29 09:56:15 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
 #include <ctype.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
@@ -72,6 +71,7 @@ int			ft_memcmp(const void *s1, const void *s2, size_t n);
 int			ft_atoi(const char *nptr);
 long		ft_atol(const char *nptr);
 uint32_t	ft_uatoi(const char *nptr);
+double		ft_atof(char *str);
 char		*ft_itoa(int n);
 
 void		*ft_calloc(size_t nmemb, size_t size);
