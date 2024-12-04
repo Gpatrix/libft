@@ -1,5 +1,5 @@
 CC		= gcc
-CFLAGS	= -Wall -Wextra -Werror -g -O0
+CFLAGS	= -Wall -Wextra -Werror -O3
 
 NAME	= libftprintf.a
 
