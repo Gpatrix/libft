@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 11:07:02 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/21 09:44:58 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:23:14 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,16 +36,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// int	main(void)
-// {
-// 	char	*src = "this is a good cat !\r\n";
-// 	char	dst1[0xF0];
-// 	char	dst2[0xF0];
-// 	int		size = strlen(src);
-
-// 	memmove(dst1, src, size);
-// 	printf("%s", dst1);
-// 	ft_memmove(dst2, src, size);
-// 	printf("%s", dst2);
-// }

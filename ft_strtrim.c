@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 11:33:23 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/18 11:05:14 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:24:21 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	cpy_size = d_to_next_char(s1, set);
 	return (ft_substr(s1, 0, cpy_size));
 }
-
-// int main() 
-// {
-// 	printf("%s", ft_strtrim("132test312", "13"));
-
-// 	return (0);
-// }

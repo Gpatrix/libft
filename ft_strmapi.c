@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 10:31:26 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/22 12:52:50 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:23:59 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new_str[index] = '\0';
 	return (new_str);
 }
-
-// char	test_fonction(unsigned int n, char c)
-// {
-// 	return (c + n);
-// }
-
-// int	main(void)
-// {
-// 	("%s", ft_strmapi("test le plus", test_fonction));
-// 	return (0);
-// }

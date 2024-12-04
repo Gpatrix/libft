@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 09:33:44 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/21 08:55:15 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:24:02 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-// int main() {
-
-// 	const char test_str[] = "test strin 132";
-// 	const char to_fnd[]   = "strin";
-
-// 	printf("%s \n", strnstr(test_str, to_fnd, 11));
-// 	printf("%s", ft_strnstr(test_str, to_fnd, 11));
-// 	return (0);
-// }

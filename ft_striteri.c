@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 11:05:50 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/17 11:27:20 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:24:14 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		index++;
 	}
 }
-
-// void	test_fonction(unsigned int n, char *c)
-// {
-// 	*c += n;
-// }
-
-// int	main(void)
-// {
-// 	char test_str[] = "test le plus";
-
-// 	ft_striteri(test_str, test_fonction);
-// 	printf("%s", test_str);
-// 	return (0);
-// }

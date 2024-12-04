@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 14:26:38 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/21 08:55:44 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:24:08 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,26 +25,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-// char	*ft_strrchr(const char *s, int c)
-// {
-// 	char	*ptr;
-
-// 	ptr = NULL;
-// 	while (*s)
-// 	{
-// 		if (*s == c)
-// 			ptr = (char *)s;
-// 		s++;
-// 	}
-// 	if (*s == c)
-// 		return ((char *)s);
-// 	return (ptr);
-// }
-
-// int main() {
-// 	char	test_char[] = "te1st 1234";
-
-// 	printf("%p %p", ft_strrchr(test_char, 49), strrchr(test_char, 49));
-// 	return (0);
-// }

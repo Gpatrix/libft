@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 17:09:30 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/11/28 16:14:18 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:21:23 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,3 @@ int	ft_isstrdigit(char *str)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	printf("fake: %i | True: %i", ft_isdigit(48), isdigit(48));
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 09:13:27 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/17 09:50:19 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:21:19 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,3 @@ int	ft_isprint(int c)
 	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	printf("fake: %i | True: %i", ft_isprint(32), isprint(126));
-// 	return (0);
-// }

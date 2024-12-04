@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:42:12 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/11/28 16:13:17 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:21:07 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_isalpha(int c)
 		return (1024);
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	printf("fake: %i | True: %i", ft_isalpha(100), isalpha(100));
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 13:44:59 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/15 13:48:21 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:24:26 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-
-// int main() {
-// 	char	test_char = 'Z';
-
-// 	printf("%c", ft_tolower(test_char));
-// 	return (0);
-// }

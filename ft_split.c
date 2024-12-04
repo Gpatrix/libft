@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:39:28 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/11/25 09:02:42 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:23:34 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,26 +104,3 @@ char	**ft_split(char const *s, char c)
 	tab[index] = NULL;
 	return (tab);
 }
-
-// int	main()
-// {
-// 	// char str[] = "les mot  de plus tester";
-// 	// char charset = ' ';
-// 	char **result;
-// 	int i;
-
-// 	result = ft_split("^^^1^^2a,^^^^3^^^^--h^^^^", '^');
-
-// 	if (!result)
-// 		return (EXIT_FAILURE);
-// 	i = 0;
-// 	while (result[i])
-// 	{
-// 		printf("Word %d: %s\n", i + 1, result[i]);
-// 		free(result[i]);
-// 		i++;
-// 	}
-// 	free(result);
-
-// 	return (0);
-// }

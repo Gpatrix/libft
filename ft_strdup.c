@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 17:35:57 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/16 09:02:41 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:23:43 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,3 @@ char	*ft_strdup(const char *s)
 		src_copy[index] = s[index];
 	return (src_copy);
 }
-
-// int	main(void)
-// {
-
-// 	char s1[] ="test";
-
-// 	printf("%s\n", strdup(s1));
-// 	printf("%s", ft_strdup(s1));
-
-// 	return (0);
-// }

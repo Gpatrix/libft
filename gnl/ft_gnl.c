@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 12:39:10 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/11/06 09:11:01 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:22:03 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,65 +81,3 @@ char	*get_next_line(int fd)
 		return (free(leftover[fd]), leftover[fd] = NULL);
 	return (_get_line(&leftover[fd]));
 }
-
-// int	main(void)
-// {
-// 	int	fd1;
-// 	int	fd2;
-// 	char	*test;
-// //  1char.txt file.test nl only_nl.txt
-// 	fd1 = open("file.test", O_RDONLY);
-// 	fd2 = open("file.test", O_RDONLY);
-// 	while (1)
-// 	{
-// 		test = get_next_line(fd1);
-// 		printf("%s", test);
-// 		if (test == NULL)
-// 			break ;
-// 		free(test);
-// 		test = get_next_line(fd2);
-// 		printf("%s", test);
-// 		if (test == NULL)
-// 			break ;
-// 		free(test);
-// 	}
-// 	if (close(fd1) < 0)
-// 		return (0);
-// 	if (close(fd2) < 0)
-// 		return (0);
-// 	return (0);
-// }
-
-// int	main(void)
-// {
-// 	char *tmp;
-// 	char *name = "read_error.txt";
-// 	int fd = open(name, O_RDONLY);
-// 	/* 1 */ printf("%s", tmp = get_next_line(fd));
-// 			free(tmp);
-// 	/* 2 */ printf("%s", tmp = get_next_line(fd));
-// 			free(tmp);
-// 	if (BUFFER_SIZE > 100) {
-// 		char *temp;
-// 		do {
-// 			temp = get_next_line(fd);
-// 			free(temp);
-// 		} while (temp != NULL);
-// 	}
-// 	/* 3 */ printf("%s", tmp = get_next_line(fd));
-// 			free(tmp);
-// 	close(fd);
-// 	fd = open(name, O_RDONLY);
-// 	/* 4 */ printf("%s", tmp = get_next_line(fd));
-// 			free(tmp);
-// 	/* 5 */ printf("%s", tmp = get_next_line(fd));
-// 			free(tmp);
-// 	/* 6 */ printf("%s", tmp = get_next_line(fd));
-// 			free(tmp);
-// 	/* 7 */ printf("%s", tmp = get_next_line(fd));
-// 			free(tmp);
-// 	/* 8 */ printf("%s", tmp = get_next_line(fd));
-// 			free(tmp);
-
-// 	return (0);
-// }

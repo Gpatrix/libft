@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 14:38:05 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/18 11:07:20 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:24:17 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main(void)
-// {
-// 	char s1[] ="rex";
-// 	char s2[] ="reg";
-// 	printf("%i ", strncmp(s1, s2, 4));
-// 	printf("%i", ft_strncmp(s1, s2, 4));
-// 	return 0;
-// }

@@ -2,6 +2,7 @@
 	"files.associations": {
 		"libft.h": "c",
 		"random": "c",
-		"queue": "c"
+		"queue": "c",
+		"sstream": "c"
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 17:14:33 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/15 17:38:00 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:20:48 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (resulte * signe);
 }
-
-// int	main(void)
-// {
-
-// 	char s1[] ="  132 e";
-
-// 	printf("%i\n", atoi(s1));
-// 	printf("%i", ft_atoi(s1));
-
-// 	return (0);
-// }

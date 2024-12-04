@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 17:18:26 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/11/28 16:13:22 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:21:02 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_isalnum(int c)
 		return (8);
 	return (0);
 }
-
-// int	main(void)
-// {
-// printf("fake: %i | True: %i", ft_isalnum(55), isalnum(55));
-// 	return (0);
-// }

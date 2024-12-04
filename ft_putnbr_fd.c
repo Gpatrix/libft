@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 11:44:24 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/18 12:31:14 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:23:28 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd((n % 10) + '0', fd);
 	}
 }
-
-// int	main(void)
-// {
-// 	ft_putnbr_fd(-134, 1);
-// 	return (0);
-// }

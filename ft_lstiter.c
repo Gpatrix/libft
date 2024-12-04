@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 09:27:23 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/18 10:05:57 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:22:45 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,22 +26,3 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	}
 	f(lst->content);
 }
-
-// static void	foo(void *to_del)
-// {
-// 	(void)to_del;
-// 	return ;
-// }
-
-// int	main(void)
-// {
-// 	t_list	*test_lst = NULL;
-
-// 	test_lst = malloc(sizeof(size_t));
-// 	test_lst = ft_lstnew("test");
-// 	test_lst->next = ft_lstnew("test");
-
-// 	ft_lstiter(test_lst, foo);
-
-// 	return (0);
-// }

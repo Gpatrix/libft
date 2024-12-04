@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 13:40:52 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/15 13:44:28 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:24:28 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-
-// int main() {
-// 	char	test_char = '8';
-
-// 	printf("%c", ft_toupper(test_char));
-// 	return (0);
-// }

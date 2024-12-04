@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 09:56:12 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/10/18 14:04:59 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/04 10:22:56 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,35 +29,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (origin);
 }
-
-// static void	*foo(void *content)
-// {
-// 	return (content);
-// }
-
-// static void	delet(void *to_del)
-// {
-// 	free (to_del);
-// }
-
-// int	main(void)
-// {
-// 	t_list	*test_lst = NULL;
-
-// 	test_lst = ft_lstnew("test 1");
-//  	ft_lstlast(test_lst)->next = ft_lstnew("test 2");
-//  	ft_lstlast(test_lst)->next = ft_lstnew("test 3");
-//  	ft_lstlast(test_lst)->next = ft_lstnew("test 4");
-
-// 	printf("origin: %p | ", test_lst);
-// 	test_lst = ft_lstmap(test_lst, foo, delet);
-// 	printf("map: %p\n", test_lst);
-
-// 	while (test_lst && test_lst->content)
-// 	{
-// 		printf("%s ", (char *)test_lst->content);
-// 		test_lst = test_lst->next;
-// 	}
-
-// 	return (0);
-// }
