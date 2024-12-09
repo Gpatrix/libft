@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 12:39:10 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/12/04 10:22:03 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/09 16:37:38 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ char	*get_next_line(int fd)
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	if (ft_strchr(leftover[fd], '\n'))
+	if (_ft_strchr(leftover[fd], '\n'))
 		return (_get_line(&leftover[fd]));
 	leftover[fd] = _read_file(leftover[fd], fd);
 	if (!leftover[fd])
