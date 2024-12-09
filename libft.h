@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:51:17 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/11/29 09:56:15 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/09 18:00:42 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,3 +87,5 @@ void		ft_putnbr_fd(int n, int fd);
 
 int			ft_printf(const char *s, ...);
 char		*get_next_line(int fd);
+
+void		ft_free_split(char **array);
