@@ -3,6 +3,7 @@
 		"libft.h": "c",
 		"random": "c",
 		"queue": "c",
-		"sstream": "c"
+		"sstream": "c",
+		"stdlib.h": "c"
 	}
 }
