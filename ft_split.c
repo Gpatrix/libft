@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:39:28 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/12/04 10:23:34 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/18 09:14:21 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,24 +31,6 @@ static size_t	ft_count_words(const char *s, char c)
 		s++;
 	}
 	return (count);
-}
-
-static char	*ft_strndup(const char *start, size_t len)
-{
-	char	*word;
-	size_t	i;
-
-	word = malloc((len + 1) * sizeof(char));
-	if (!word)
-		return (NULL);
-	i = 0;
-	while (i < len)
-	{
-		word[i] = start[i];
-		i++;
-	}
-	word[i] = '\0';
-	return (word);
 }
 
 static size_t	ft_strlen_end(const char *s, char c)
