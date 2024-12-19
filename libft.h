@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:51:17 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/12/18 09:14:40 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/19 16:49:54 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,6 @@ char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s1, char const *set);
 char		**ft_split(char const *s, char c);
 int			ft_split_size(char **array);
-void		ft_split_free(char **array);
 
 char		*ft_strchr(const char *s, int c);
 char		*ft_strrchr(const char *s, int c);
@@ -94,3 +93,5 @@ void		ft_putnbr_fd(int n, int fd);
 
 int			ft_printf(const char *s, ...);
 char		*get_next_line(int fd);
+
+void		ft_free_array(char **array);
