@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:39:28 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/12/18 09:14:21 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/20 14:41:45 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static size_t	ft_count_words(const char *s, char c)
 	return (count);
 }
 
-static size_t	ft_strlen_end(const char *s, char c)
+static size_t	ft_strlen_c(const char *s, char c)
 {
 	size_t	count;
 
@@ -76,7 +76,7 @@ char	**ft_split(char const *s, char c)
 			s++;
 		if (*s != '\0')
 		{
-			tab_size = ft_strlen_end(s, c);
+			tab_size = ft_strlen_c(s, c);
 			tab[index++] = ft_strndup(s, tab_size);
 			if (!tab[index - 1])
 				return (free_tab(tab), NULL);
