@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:51:17 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/12/20 14:40:45 by lchauvet         ###   ########.fr       */
+/*   Updated: 2024/12/23 10:13:16 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,6 @@ char		*ft_new_strchr(const char *s, char *str);
 int			ft_strcmp(const char *s1, const char *s2);
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
 bool		one_of_str(const char c, const char *str);
-
 
 void		ft_bzero(void *s, size_t n);
 void		*ft_memset(void *s, int c, size_t n);
