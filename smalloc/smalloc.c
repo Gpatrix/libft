@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 11:20:01 by lchauvet          #+#    #+#             */
-/*   Updated: 2025/01/02 15:00:07 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/02 15:06:11 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ t_smalloc	**get_smalloc(void)
 
 	return (&lst);
 }
-
 
 void	smalloc_clear(void)
 {
