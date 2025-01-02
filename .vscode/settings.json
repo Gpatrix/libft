@@ -4,6 +4,10 @@
 		"random": "c",
 		"queue": "c",
 		"sstream": "c",
-		"stdlib.h": "c"
+		"stdlib.h": "c",
+		"ctype.h": "c",
+		"smalloc.h": "c",
+		"stdbool.h": "c",
+		"stddef.h": "c"
 	}
 }

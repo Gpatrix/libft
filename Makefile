@@ -21,6 +21,8 @@ SRCS_FILE = ft_isalpha.c        ft_isdigit.c    ft_isalnum.c      ft_isascii.c  
 
 SRCS = $(addprefix $(SRCS_DIR)/, $(SRCS_FILE))
 SRCS += gnl/ft_gnl_utils.c gnl/ft_gnl.c
+SRCS += smalloc/smalloc_utils.c smalloc/smalloc.c
+
 SRCS_OBJS	= ${SRCS:.c=.o}
 
 all:	${NAME}
