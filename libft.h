@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:51:17 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/12/23 10:13:16 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:54:26 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 #include <string.h>
 #include <limits.h>
 #include <stdint.h>
+#include "./smalloc/smalloc.h"
 
 typedef struct s_list
 {
@@ -53,7 +54,9 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
 
 char		*ft_strdup(const char *s);
+char		*ft_sstrdup(const char *s);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
+char		*ft_ssubstr(const char *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s1, char const *set);
 char		**ft_split(char const *s, char c);
