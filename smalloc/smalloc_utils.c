@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 11:34:33 by lchauvet          #+#    #+#             */
-/*   Updated: 2025/01/02 13:18:31 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/02 14:58:10 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,22 +78,4 @@ void	smalloc_free(void *ptr)
 	}
 	free(smalloc->ptr);
 	free(smalloc);
-}
-
-void	smalloc_end(bool exit_error)
-{
-	t_smalloc	**smalloc;
-	t_smalloc	*tmp_smalloc;
-
-	smalloc = get_smalloc();
-	if (!smalloc)
-		exit(exit_error);
-	while (*smalloc)
-	{
-		tmp_smalloc = *smalloc;
-		(*smalloc) = (*smalloc)->next;
-		free(tmp_smalloc->ptr);
-		free(tmp_smalloc);
-	}
-	exit(exit_error);
 }
