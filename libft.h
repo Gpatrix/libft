@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:51:17 by lchauvet          #+#    #+#             */
-/*   Updated: 2025/01/03 09:04:01 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/03 09:36:42 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,6 @@ void		*ft_calloc(size_t nmemb, size_t size);
 char		*ft_strdup(const char *s);
 char		*ft_strndup(const char *start, size_t len);
 char		*ft_sstrndup(short arena, const char *start, size_t len);
-
 
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void		ft_striteri(char *s, void (*f)(unsigned int, char*));
