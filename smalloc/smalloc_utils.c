@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 11:34:33 by lchauvet          #+#    #+#             */
-/*   Updated: 2025/01/02 14:58:10 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/03 09:04:20 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,11 +41,11 @@ bool	smalloc_add_last(t_smalloc **lst, t_smalloc *new)
 	return (EXIT_SUCCESS);
 }
 
-static t_smalloc	*smalloc_chr(void *ptr)
+static t_smalloc	*smalloc_chr(short arena, void *ptr)
 {
 	t_smalloc	*smalloc;
 
-	smalloc = *get_smalloc();
+	smalloc = *get_smalloc(arena);
 	if (!smalloc)
 		return (NULL);
 	while (smalloc)
@@ -57,17 +57,17 @@ static t_smalloc	*smalloc_chr(void *ptr)
 	return (NULL);
 }
 
-void	smalloc_free(void *ptr)
+void	smalloc_free(short arena, void *ptr)
 {
 	t_smalloc	*smalloc;
 	t_smalloc	**tmp_smalloc;
 
-	smalloc = smalloc_chr(ptr);
+	smalloc = smalloc_chr(arena, ptr);
 	if (!smalloc)
 		return ;
-	if (smalloc == *get_smalloc())
+	if (smalloc == *get_smalloc(arena))
 	{
-		tmp_smalloc = get_smalloc();
+		tmp_smalloc = get_smalloc(arena);
 		if (smalloc->next)
 		{
 			(*tmp_smalloc) = (*tmp_smalloc)->next;

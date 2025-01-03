@@ -6,15 +6,16 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 11:20:53 by lchauvet          #+#    #+#             */
-/*   Updated: 2025/01/02 15:00:32 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/03 09:03:31 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef SMALLOC_H
+# define SMALLOC_H
 
-#include <stdbool.h>
-#include <stddef.h>
-#include <stdlib.h>
+# include <stdbool.h>
+# include <stddef.h>
+# include <stdlib.h>
 
 typedef struct s_smalloc
 {
@@ -23,12 +24,19 @@ typedef struct s_smalloc
 	struct s_smalloc	*next;
 }				t_smalloc;
 
-void		*smalloc(size_t __size);
+# ifndef MAX_ARENA
+#  define MAX_ARENA 10
+# endif
 
-t_smalloc	**get_smalloc(void);
+void		*smalloc(short arena, size_t __size);
+
+t_smalloc	**get_smalloc(short arena);
 
 t_smalloc	*smalloc_new(void *ptr);
 bool		smalloc_add_last(t_smalloc **lst, t_smalloc *new);
-void		smalloc_free(void *ptr);
-void		smalloc_clear(void);
+void		smalloc_free(short arena, void *ptr);
+void		smalloc_clear(short arena);
+void		smalloc_clear_all(void);
 void		smalloc_end(bool exit_error);
+
+#endif
