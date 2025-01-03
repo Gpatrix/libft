@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:51:17 by lchauvet          #+#    #+#             */
-/*   Updated: 2025/01/03 09:36:42 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/03 11:11:23 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ int			ft_tolower(int c);
 
 size_t		ft_strlen(const char *s);
 size_t		ft_strlen_end(char *str, char *end);
+size_t		ft_strlen_cont(char *str, char *end);
 size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
 

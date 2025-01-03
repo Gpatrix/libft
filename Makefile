@@ -17,7 +17,7 @@ SRCS_FILE = ft_isalpha.c        ft_isdigit.c    ft_isalnum.c      ft_isascii.c  
 			ft_lstclear.c       ft_lstiter.c    ft_lstmap.c       ft_strlen_end.c   \
 			ft_uatoi.c          ft_atol.c       ft_strcmp.c       ft_strndup.c      \
 			ft_isstrascii.c     ft_isstrdigit.c ft_atof.c         ft_free_array.c   \
-			one_of_str.c        ft_new_strchr.c ft_split_size.c                     \
+			one_of_str.c        ft_new_strchr.c ft_split_size.c   ft_strlen_cont.c    \
 
 SRCS = $(addprefix $(SRCS_DIR)/, $(SRCS_FILE))
 SRCS += gnl/ft_gnl_utils.c gnl/ft_gnl.c
