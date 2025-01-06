@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:39:28 by lchauvet          #+#    #+#             */
-/*   Updated: 2025/01/06 15:01:45 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/06 15:18:46 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (0);
-	tab = malloc(ft_count_words(s, c) + 1);
+	tab = malloc((ft_count_words(s, c) + 1) * sizeof(char *));
 	if (!tab)
 		return (NULL);
 	index = 0;
@@ -95,7 +95,7 @@ char	**ft_ssplit(short arena, char const *s, char c)
 
 	if (!s)
 		return (0);
-	tab = smalloc(arena, ft_count_words(s, c) + 1);
+	tab = smalloc(arena, (ft_count_words(s, c) + 1) * sizeof(char *));
 	index = 0;
 	while (*s != '\0')
 	{
