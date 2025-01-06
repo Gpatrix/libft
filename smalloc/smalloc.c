@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 11:20:01 by lchauvet          #+#    #+#             */
-/*   Updated: 2025/01/03 09:03:28 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/06 09:43:47 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ void	*smalloc(short arena, size_t __size)
 	ptr = malloc(__size);
 	if (!ptr)
 		smalloc_end(EXIT_FAILURE);
-	if (smalloc_add_last(get_smalloc(arena), smalloc_new(ptr)))
+	if (smalloc_add_last(arena, smalloc_new(ptr)))
 		smalloc_end(EXIT_FAILURE);
 	return (ptr);
 }
