@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:39:28 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/12/20 14:41:45 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/06 15:01:45 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (0);
-	tab = malloc((ft_count_words(s, c) + 1) * sizeof(char *));
+	tab = malloc(ft_count_words(s, c) + 1);
 	if (!tab)
 		return (NULL);
 	index = 0;
@@ -80,6 +80,31 @@ char	**ft_split(char const *s, char c)
 			tab[index++] = ft_strndup(s, tab_size);
 			if (!tab[index - 1])
 				return (free_tab(tab), NULL);
+			s += tab_size;
+		}
+	}
+	tab[index] = NULL;
+	return (tab);
+}
+
+char	**ft_ssplit(short arena, char const *s, char c)
+{
+	char	**tab;
+	size_t	tab_size;
+	size_t	index;
+
+	if (!s)
+		return (0);
+	tab = smalloc(arena, ft_count_words(s, c) + 1);
+	index = 0;
+	while (*s != '\0')
+	{
+		while (*s == c && *s != '\0')
+			s++;
+		if (*s != '\0')
+		{
+			tab_size = ft_strlen_c(s, c);
+			tab[index++] = ft_sstrndup(arena, s, tab_size);
 			s += tab_size;
 		}
 	}

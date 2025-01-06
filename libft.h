@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:51:17 by lchauvet          #+#    #+#             */
-/*   Updated: 2025/01/06 08:51:46 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/06 15:01:40 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ char		*ft_ssubstr(short arena,
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s1, char const *set);
 char		**ft_split(char const *s, char c);
+char		**ft_ssplit(short arena, char const *s, char c);
 int			ft_split_size(char **array);
 
 char		*ft_strchr(const char *s, int c);
