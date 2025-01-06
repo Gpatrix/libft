@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:51:17 by lchauvet          #+#    #+#             */
-/*   Updated: 2025/01/03 11:11:23 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/06 08:51:46 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,8 @@ int			ft_atoi(const char *nptr);
 long		ft_atol(const char *nptr);
 uint32_t	ft_uatoi(const char *nptr);
 double		ft_atof(char *str);
-char		*ft_itoa(int n);
+char		*ft_itoa(int num);
+char		*ft_sitoa(short arena, int num);
 
 void		*ft_calloc(size_t nmemb, size_t size);
 char		*ft_strdup(const char *s);
