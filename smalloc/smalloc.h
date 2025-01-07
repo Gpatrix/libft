@@ -6,7 +6,7 @@
 /*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 11:20:53 by lchauvet          #+#    #+#             */
-/*   Updated: 2025/01/06 09:46:23 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/07 11:57:39 by lchauvet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,14 @@ void		*smalloc(short arena, size_t __size);
 t_smalloc	**get_smalloc(short arena);
 
 t_smalloc	*smalloc_new(void *ptr);
+void		smalloc_register(short arena, void *ptr);
 bool		smalloc_add_last(short arena, t_smalloc *new);
+
 void		smalloc_free(short arena, void *ptr);
 void		smalloc_clear(short arena);
 void		smalloc_clear_all(void);
 void		smalloc_end(bool exit_error);
+
+t_smalloc	*_smalloc_chr(short arena, void *ptr);
 
 #endif
