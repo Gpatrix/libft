@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   one_of_str.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lchauvet <lchauvet@student.42.fr>          +#+  +:+       +#+        */
+/*   By: louis <louis@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 17:50:30 by lchauvet          #+#    #+#             */
-/*   Updated: 2024/12/11 17:52:41 by lchauvet         ###   ########.fr       */
+/*   Updated: 2025/01/08 13:37:40 by louis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 bool	one_of_str(const char c, const char *str)
 {
-	unsigned char	index;
-
-	index = 0;
 	while (*str)
 	{
 		if (c == *str)
